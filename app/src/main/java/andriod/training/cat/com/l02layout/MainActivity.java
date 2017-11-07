@@ -48,6 +48,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MixingLOActivity.class));
             }
         });
+
+        //Button click to  page
+        Button bt_goto_list_advance = (Button) findViewById(R.id.lo_bt_goto_list_advance);
+        bt_goto_list_advance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ListLOAdvanceActivity.class));
+            }
+        });
+
+        //Button click to  page
+        Button bt_goto_web_view  = (Button) findViewById(R.id.lo_bt_goto_web_view);
+        bt_goto_web_view .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, WebViewActivity.class));
+            }
+        });
+
     }
 
 }
